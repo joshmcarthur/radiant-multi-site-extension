@@ -10,7 +10,7 @@ class AddAdminFieldsToSites < ActiveRecord::Migration
   def self.down
     remove_column :sites, :created_by_id
     remove_column :sites, :created_at
-    remove_column :sites, :udpated_by_id
+    remove_column :sites, :updated_by_id
     remove_column :sites, :updated_at
     remove_column :sites, :subtitle
   end

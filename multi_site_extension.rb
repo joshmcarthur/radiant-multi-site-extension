@@ -44,7 +44,7 @@ class MultiSiteExtension < Radiant::Extension
     end
     
     if respond_to?(:tab)
-      tab("Content") do
+      tab("Settings") do
         add_item "Sites", "/admin/sites", :visibility => [:admin]
       end
     else
